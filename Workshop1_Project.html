@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="/src/style.css" rel="stylesheet" type="text/css"/>
+  <title>Succulents</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+    <div class="header">
+      <h1>❤ Succus Ens ❤</h1>
+      <h2>Happy succulents!</h2>
+      <hr>
+    </div>
+
+      <img 
+      onmouseover="this.src='/src/echeveria2.png'"
+      onmouseout="this.src='/src/echeveria1.png'"
+      src="'/src/echeveria1.png'"/>
+      <div class="description">
+      <p>
+      <span><strong>Echeveria</strong></span> is a family of rose-shaped succulents native to the
+      <em>semi-desert</em> regions of Central America.
+      Because of its charming leaves' structure, Echeverias are one of the most well-known succulents. 
+      </br>
+      </br>
+      There are plenty of types with different <em>gorgeous colors</em> when it comes to Echeverias.
+      Same like other succulents, they are super easy to grow and take care of.
+    </p>
+    <a href="https://www.instagram.com/succus.ens/" target="_blank">See our collection</a>
+  </div>
+    <button class="buy">
+      Buy Succulents!
+    </button>
+    <p class="coder">Coded by Sandra Lopez 👩‍🌾</p>
+
+    <div class="bottom-img">
+
+    </div>
+  </div>
+  </section>
+  <script>
+  function buyCacti(){
+    let name = prompt("What is your name?");
+    if(name === ""){
+      alert("Please, input your name.");
+    } else {
+      let sunny = prompt("Does your home get direct sunlight? Y / N");
+      sunny = sunny.toUpperCase();
+      if(sunny === "N"){
+        alert(`Sorry ${name}, succulents won't survive, try shade plants 👩‍🌾`);
+      } else {
+          let email = prompt("What is your email?");
+          buy.innerHTML = `Thank you ${name}, we'll contact you soon! 🎍`;
+      }
+    }
+  }
+  let buy = document.querySelector(".buy");
+  buy.addEventListener("click", buyCacti);
+  </script>
+</body>
+</html>
